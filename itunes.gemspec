@@ -28,10 +28,10 @@ Gem::Specification.new do |s|
   s.add_development_dependency('vcr', '~> 1.11')
   s.add_development_dependency('json', '~> 1.6')
 
-  s.add_runtime_dependency('rash', '~> 0.3')
+  s.add_runtime_dependency('rash', '~> 0.4')
   s.add_runtime_dependency('faraday_middleware', '~> 0.7')
   s.add_runtime_dependency('multi_json', '~> 1.0')
-  
+
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
