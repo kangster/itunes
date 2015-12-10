@@ -11,7 +11,8 @@ module ITunes
 
       response = connection.get do |req|
         req.url url, params
-        req.options = request_options
+        req.options.timeout = request_options[:timeout] if request_options[:timeout].present?
+        req.options.open_timeout = request_options[:open_timeout] if request_options[:open_timeout].present?
       end
       response.body
     end
