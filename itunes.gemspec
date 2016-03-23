@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('vcr', '~> 1.11')
   s.add_development_dependency('json', '~> 1.6')
 
-  s.add_runtime_dependency('rash_kesha_antonov')
+  s.add_runtime_dependency('rash')
   s.add_runtime_dependency('faraday_middleware', '~> 0.9')
   s.add_runtime_dependency('multi_json', '~> 1.0')
 
